@@ -1,0 +1,33 @@
+{
+  "name": "cli-business-card",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build card.js -o hurdofdaniel/build",
+    "build-publish": "cd hurdofdaniel && npm run prep-publish && npm run publish-card"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hurdofdaniel/cli-business-card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hurdofdaniel/cli-business-card/issues"
+  },
+  "homepage": "https://github.com/hurdofdaniel/cli-business-card#readme",
+  "dependencies": {
+    "boxen": "^7.0.0",
+    "chalk": "^5.0.1",
+    "clear": "^0.1.0",
+    "inquirer": "^9.0.0",
+    "open": "^8.4.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.34.0"
+  }
+}

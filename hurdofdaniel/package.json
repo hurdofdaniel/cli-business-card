@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "name": "hurdofdaniel",
+  "version": "1.0.0",
+  "description": "CLI Business Card",
+  "main": "cli.js",
+  "bin": {
+    "hurdofdaniel": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prep-publish": "(echo #!/usr/bin/env node) >index.js.new && type index.js >>index.js.new && move /y index.js.new index.js && move /y index.js cli.js",
+    "publish-card": "npm version major && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
